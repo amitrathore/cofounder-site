@@ -4,7 +4,7 @@
 
 The homepage for **Cofounder** — a book and platform by [Amit Rathore](https://github.com/amitrathore) on building anything, with anyone, in the age of AI and agents.
 
-🌐 **Live site:** [cofounder.exchange](https://cofounder.exchange)
+🌐 **Live site:** [cofounder.community](https://cofounder.community)
 
 ## About
 
