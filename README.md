@@ -1,6 +1,6 @@
 # Cofounder
 
-> Entrepreneurship is natural. AI just made it ours again.
+> Entrepreneurship is natural. AI just made it human again.
 
 The homepage for **Cofounder** — a book and platform by [Amit Rathore](https://github.com/amitrathore) on building anything, with anyone, in the age of AI and agents.
 
