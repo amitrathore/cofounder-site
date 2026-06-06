@@ -62,6 +62,7 @@ a:hover { color: var(--red); }
 .book-nav-brand .dot { color: var(--red); }
 .book-nav-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
   font-size: 14px;
   font-weight: 500;
@@ -253,6 +254,140 @@ a:hover { color: var(--red); }
   .toc-part { grid-template-columns: 1fr; gap: 14px; }
   .toc-chapter { grid-template-columns: 40px 1fr; }
   .toc-ch-status { grid-column: 2; margin-top: 4px; }
+}
+
+/* ============================================================
+   VENTURES — example venture directory
+   ============================================================ */
+.ventures-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 80px 32px 120px;
+}
+.ventures-hero {
+  max-width: 720px;
+  margin-bottom: 64px;
+}
+.ventures-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.ventures-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+.ventures-title .dot { color: var(--red); }
+.ventures-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.4;
+  color: var(--ink-soft);
+  margin: 18px 0 0;
+}
+.venture-list {
+  border-top: 2px solid var(--red);
+}
+.venture-card {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.venture-logo {
+  width: 76px;
+  height: 76px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.venture-logo.logo-red {
+  background: var(--red);
+  border-color: var(--red);
+}
+.venture-logo.logo-paper {
+  background: var(--paper);
+  color: var(--red);
+  border-color: var(--red);
+}
+.venture-copy {
+  min-width: 0;
+}
+.venture-kicker {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 8px;
+}
+.venture-copy h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+  margin: 0 0 8px;
+}
+.venture-copy p {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 620px;
+  margin: 0;
+}
+.venture-link {
+  justify-self: end;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 12px 14px;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.venture-link:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--paper);
+}
+
+@media (max-width: 760px) {
+  .ventures-page { padding: 56px 22px 80px; }
+  .venture-card {
+    grid-template-columns: 76px minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+  }
+  .venture-logo {
+    width: 64px;
+    height: 64px;
+    font-size: 21px;
+  }
+  .venture-link {
+    grid-column: 2;
+    justify-self: start;
+  }
 }
 
 /* ============================================================

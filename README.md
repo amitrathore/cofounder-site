@@ -19,7 +19,12 @@ The platform has four pillars:
 
 ## This repo
 
-Static homepage. One file: `index.html`. No build step, no framework, no tracking. Open it in a browser.
+Static site. No build step, no framework, no tracking. Open it in a browser.
+
+- `index.html` — homepage
+- `read/` — public manuscript pages
+- `ventures/` — example venture showcase
+- `assets/book.css` — shared styles for manuscript and venture pages
 
 ### Local preview
 
