@@ -99,6 +99,7 @@ Expected values:
 - `track=founder`
 - `source=founder-track` from the Founder Track page
 - `source=compare` from Compare Tracks
+- `source=cohort-pricing` from the Founding Cohort Pricing page
 - `payment_plan=pay-in-full`
 - `payment_plan=payment-plan`
 
@@ -171,6 +172,7 @@ Expected values:
 - `track=venture`
 - `source=venture-track` from the Venture Track page
 - `source=compare` from Compare Tracks
+- `source=cohort-pricing` from the Founding Cohort Pricing page
 - `payment_plan=pay-in-full`
 - `payment_plan=payment-plan`
 
