@@ -144,6 +144,7 @@
   }
   nav.primary {
     display: flex;
+    align-items: center;
     gap: 32px;
     font-size: 14px;
     color: var(--ink-soft);
@@ -151,6 +152,69 @@
   nav.primary a {
     font-weight: 500;
     letter-spacing: 0.01em;
+  }
+  .nav-item { position: relative; }
+  .nav-trigger {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: default;
+  }
+  .build-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: -18px;
+    width: min(360px, calc(100vw - 40px));
+    padding: 10px;
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+    box-shadow: 0 20px 50px rgba(22, 20, 17, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, visibility 0.15s ease, transform 0.15s ease;
+  }
+  .nav-item:hover .build-menu,
+  .nav-item:focus-within .build-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .build-menu a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px 12px;
+    padding: 13px 12px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .build-menu a:last-child { border-bottom: 0; }
+  .build-menu strong {
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .build-menu .desc {
+    grid-column: 1 / -1;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--ink-muted);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 3px 8px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .pill.live {
+    color: var(--red);
+    border-color: rgba(184, 58, 46, 0.28);
+    background: rgba(184, 58, 46, 0.08);
   }
   .nav-cta {
     font-size: 13px;
@@ -480,6 +544,14 @@
     flex-direction: column;
     gap: 18px;
   }
+  a.aud-card {
+    min-height: 100%;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.aud-card:hover {
+    background: var(--paper-deep);
+    color: var(--ink);
+  }
   .aud-num {
     font-family: var(--sans);
     font-weight: 700;
@@ -657,7 +729,32 @@
     <nav class="primary">
       <a href="./read/">Book</a>
       <a href="./1b.html">1B</a>
-      <a href="./ventures/">Ventures</a>
+      <div class="nav-item">
+        <button class="nav-trigger" type="button">Build ▾</button>
+        <div class="build-menu" aria-label="Build">
+          <a href="./build/student-founders/">
+            <strong>Student Founders</strong>
+            <span class="pill live">Live</span>
+            <span class="desc">The 12-week path to building your own company.</span>
+          </a>
+          <a href="./build/first-time-founders/">
+            <strong>First-Time Founders</strong>
+            <span class="pill">Coming Soon</span>
+            <span class="desc">A self-directed founder journey at your own pace.</span>
+          </a>
+          <a href="./build/repeat-founders/">
+            <strong>Repeat Founders</strong>
+            <span class="pill">Coming Soon</span>
+            <span class="desc">Peers at your level and the AI-native playbook.</span>
+          </a>
+          <a href="./build/exchange/">
+            <strong>The Exchange</strong>
+            <span class="pill">Coming Soon</span>
+            <span class="desc">Tools, agents, templates, and services members trade.</span>
+          </a>
+        </div>
+      </div>
+      <a href="./examples/">Examples</a>
     </nav>
     <a href="./1b.html#join" class="nav-cta">Join</a>
   </div>
@@ -739,23 +836,23 @@
 
     <div class="aud-grid">
 
-      <div class="aud-card">
+      <a class="aud-card" href="./build/first-time-founders/">
         <div class="aud-num">01 &nbsp;/&nbsp; First-time</div>
         <h3>For the first-time builder.</h3>
         <p>You have an idea and no idea what to do with it. You&rsquo;re sixteen, or twenty, or fifty. You don&rsquo;t have a team, a degree, or permission. You don&rsquo;t need any of those things. You need a place to start, and the people who started where you are.</p>
-      </div>
+      </a>
 
-      <div class="aud-card">
+      <a class="aud-card" href="./build/repeat-founders/">
         <div class="aud-num">02 &nbsp;/&nbsp; Repeat</div>
         <h3>For the repeat founder.</h3>
         <p>You built the last one the old way. Hiring, fundraising, the whole machine. You can feel the next one needs to look completely different. This is where the founders rewriting their own playbook gather.</p>
-      </div>
+      </a>
 
-      <div class="aud-card">
+      <a class="aud-card" href="./build/student-founders/">
         <div class="aud-num">03 &nbsp;/&nbsp; Student</div>
         <h3>For the student.</h3>
         <p>High school, college, gap year, dropout. You&rsquo;re already building &mdash; you just haven&rsquo;t called it that yet. We have a curriculum, a community, and a stack of tools that didn&rsquo;t exist when your teachers were your age.</p>
-      </div>
+      </a>
 
     </div>
   </div>
@@ -839,7 +936,11 @@
       <div class="foot-col">
         <h4>Build</h4>
         <ul>
-          <li><a href="./ventures/">Ventures</a></li>
+          <li><a href="./build/student-founders/">Student Founders</a></li>
+          <li><a href="./build/first-time-founders/">First-Time Founders</a></li>
+          <li><a href="./build/repeat-founders/">Repeat Founders</a></li>
+          <li><a href="./build/exchange/">The Exchange</a></li>
+          <li><a href="./examples/">Examples</a></li>
           <li><a href="./1b.html">1B</a></li>
         </ul>
       </div>
