@@ -266,7 +266,7 @@
 
 .payment-options {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-top: 18px;
 }
@@ -329,8 +329,7 @@
   .program-hero,
   .program-grid,
   .track-grid,
-  .price-grid,
-  .payment-options {
+  .price-grid {
     grid-template-columns: 1fr;
   }
 
