@@ -338,12 +338,16 @@
   }
 
   .build-dropdown {
+    display: none;
     position: static;
     width: 100%;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
     box-shadow: none;
+    transform: none;
     margin-top: 10px;
+  }
+
+  .book-nav-item:hover .build-dropdown,
+  .book-nav-item:focus-within .build-dropdown {
+    display: block;
   }
 }
