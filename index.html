@@ -63,6 +63,53 @@
   a:hover { color: var(--red); }
 
   /* ---------------------------------------------------------------------- */
+  /* Exchange announcement                                                   */
+  /* ---------------------------------------------------------------------- */
+  .exchange-banner {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    border-top: 3px solid var(--red);
+  }
+  .exchange-banner a {
+    min-height: 46px;
+    padding: 9px 24px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .exchange-banner a:hover {
+    color: var(--paper);
+    background: var(--red-deep);
+  }
+  .exchange-banner-label {
+    flex: 0 0 auto;
+    padding: 2px 7px;
+    border: 1px solid rgba(250, 247, 242, 0.38);
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .exchange-banner-arrow {
+    flex: 0 0 auto;
+    color: #e67264;
+    font-size: 15px;
+    transition: transform 0.15s ease;
+  }
+  .exchange-banner a:hover .exchange-banner-arrow {
+    color: var(--paper);
+    transform: translate(2px, -2px);
+  }
+
+  /* ---------------------------------------------------------------------- */
   /* Reusable atoms                                                          */
   /* ---------------------------------------------------------------------- */
   .container {
@@ -704,6 +751,11 @@
     .foot-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 520px) {
+    .exchange-banner a {
+      padding-inline: 16px;
+      font-size: 12px;
+    }
+    .exchange-banner-label { display: none; }
     .foot-grid { grid-template-columns: 1fr; }
   }
 
@@ -725,6 +777,14 @@
 </head>
 
 <body>
+
+<aside class="exchange-banner" aria-label="Cofounder Exchange announcement">
+  <a href="https://cofounder.exchange">
+    <span class="exchange-banner-label">Now open</span>
+    <span>Find the right person for what you&rsquo;re building on <strong>Cofounder.Exchange</strong>.</span>
+    <span class="exchange-banner-arrow" aria-hidden="true">&nearr;</span>
+  </a>
+</aside>
 
 <!-- ================================================================== -->
 <!-- TOP NAV                                                              -->
