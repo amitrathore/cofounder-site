@@ -637,3 +637,14 @@ a:hover { color: var(--red); }
   color: var(--muted);
 }
 .book-foot a:hover { color: var(--red); }
+.book-foot .creator-link {
+  color: var(--ink-soft);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--red) 35%, transparent);
+  text-underline-offset: 3px;
+}
+.book-foot .creator-link:hover {
+  color: var(--red);
+  text-decoration-color: var(--red);
+}
