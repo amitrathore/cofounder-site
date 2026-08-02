@@ -24,6 +24,7 @@ Static site. No build step, no framework, no tracking. Open it in a browser.
 - `index.html` — homepage
 - `read/` — public manuscript pages
 - `ventures/` — example venture showcase
+- `legal/` — versioned Awake Cofounder Agreement source, Word/PDF releases, license, disclaimer, guide, and contribution docs
 - `assets/book.css` — shared styles for manuscript and venture pages
 
 ### Local preview
@@ -50,4 +51,4 @@ The site is plain HTML/CSS and can be hosted anywhere — GitHub Pages, Cloudfla
 
 ## License
 
-Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved.
+Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved, except the Awake Cofounder Agreement template text in `legal/awake-cofounder-agreement/`, which is licensed under [CC BY 4.0](./legal/awake-cofounder-agreement/LICENSE.md).
