@@ -341,6 +341,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 22px;
   margin-bottom: 68px;
 }
@@ -447,7 +448,7 @@
 }
 
 .legal-card-facts {
-  margin: auto 0 25px;
+  margin: 0 0 25px;
   border-top: 1px solid var(--rule);
 }
 
@@ -799,7 +800,13 @@
   }
 
   .legal-stage-card {
+    width: 100%;
     padding: 25px;
+  }
+
+  .legal-catalog-hero .program-title,
+  .legal-stage-card h2 {
+    overflow-wrap: anywhere;
   }
 
   .legal-stage-marker {
