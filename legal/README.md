@@ -5,5 +5,6 @@ This directory is the publication catalog for cofounder.community's open legal r
 ## Published resources
 
 - [Awake Cofounder Agreement](./awake-cofounder-agreement/) — version 1.0; California LLC and Delaware corporation used together
+- [Awake Open Collaboration Agreement](./awake-open-collaboration-agreement/) — version 1.0; California-oriented framework for exploring ventures and projects together
 
 Each resource states its own license and review status. These materials are educational templates, not legal advice, and require review by qualified counsel before use.

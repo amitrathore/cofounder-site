@@ -51,4 +51,4 @@ The site is plain HTML/CSS and can be hosted anywhere — GitHub Pages, Cloudfla
 
 ## License
 
-Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved, except the Awake Cofounder Agreement template text in `legal/awake-cofounder-agreement/`, which is licensed under [CC BY 4.0](./legal/awake-cofounder-agreement/LICENSE.md).
+Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved, except the template text in the [Awake Cofounder Agreement](./legal/awake-cofounder-agreement/LICENSE.md) and [Awake Open Collaboration Agreement](./legal/awake-open-collaboration-agreement/LICENSE.md), which is licensed under CC BY 4.0.
