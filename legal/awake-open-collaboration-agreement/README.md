@@ -11,10 +11,11 @@ The **Awake Open Collaboration Agreement** is an open legal framework for founde
 - Contribution: Amit Rathore and AwakeVC
 - Template-text license: [Creative Commons Attribution 4.0 International](./LICENSE.md)
 - Authoritative release: [`awake-open-collaboration-agreement.pdf`](./awake-open-collaboration-agreement.pdf)
+- Editable convenience copy: [`awake-open-collaboration-agreement.docx`](./awake-open-collaboration-agreement.docx)
 
 ## Publication status
 
-The PDF is the authoritative version 1.0 release. No canonical editable Word or Markdown edition has been published yet. Any future editable edition must be reconciled against the PDF and released with an updated change history.
+The PDF remains the authoritative version 1.0 release. The Word edition is provided as an editable convenience copy. If the formats conflict, the published PDF controls. Any future canonical source edition must be reconciled against the PDF and released with an updated change history.
 
 ## Before signing
 
