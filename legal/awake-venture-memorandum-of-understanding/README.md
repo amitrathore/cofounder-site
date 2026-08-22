@@ -20,15 +20,23 @@ It is **not** a founders' agreement, an operating agreement, an investor term sh
 ## Files
 
 - [`awake-venture-memorandum-of-understanding.md`](./awake-venture-memorandum-of-understanding.md) — canonical editable source
-- [`awake-venture-memorandum-of-understanding.pdf`](./awake-venture-memorandum-of-understanding.pdf) — fixed-layout PDF version 1.0
-- [`print.html`](./print.html) — print stylesheet the PDF is rendered from
+- [`awake-venture-memorandum-of-understanding.pdf`](./awake-venture-memorandum-of-understanding.pdf) — annotated template, fixed-layout PDF version 1.0
+- [`awake-venture-memorandum-of-understanding-fill-in.docx`](./awake-venture-memorandum-of-understanding-fill-in.docx) — editable fill-in copy
+- [`awake-venture-memorandum-of-understanding-fill-in.pdf`](./awake-venture-memorandum-of-understanding-fill-in.pdf) — fill-in copy, fixed layout
+- [`index.html`](./index.html) — online reading page, and where the drafting notes live
+- [`print.html`](./print.html) — print stylesheet the annotated PDF is rendered from
+- [`build-fill-in.py`](./build-fill-in.py) — generator for the fill-in copy, emitting Word and PDF from one source
 - [`guide.md`](./guide.md) — drafting and completion guide
 - [`DISCLAIMER.md`](./DISCLAIMER.md) — legal and professional-services disclaimer
 - [`LICENSE.md`](./LICENSE.md) — license scope and attribution instructions
 - [`CHANGELOG.md`](./CHANGELOG.md) — release history
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) — correction and contribution process
 
-A Word release has not been published for version 1.0.
+## Two editions
+
+The **annotated template** carries the version block, licence, field legend, and `[COUNSEL: …]` prompts. It is the reference edition.
+
+The **fill-in copy** is the same memorandum with all of that apparatus removed: no notes, no legend, just the operative clauses with every blank highlighted. It is published as Word and PDF, generated from a single source by `build-fill-in.py` so the two cannot drift apart. The drafting guidance that used to sit inside the document now lives on the [online reading page](./index.html) and in [`guide.md`](./guide.md), so that what the Partners sign carries no instructions.
 
 ## Length
 

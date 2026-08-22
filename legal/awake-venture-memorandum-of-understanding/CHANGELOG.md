@@ -12,6 +12,9 @@ All notable publication and substantive changes to the Awake Venture Memorandum 
 - Adopted the shared field legend (`[REQUIRED: …]`, `[SELECT ONE: …]`, `[OPTIONAL: …]`, `[COUNSEL: …]`, `[DRAFTING NOTE: …]`) used across the Awake legal templates.
 - Selected Creative Commons Attribution 4.0 International for the template text.
 - Added a completion and drafting guide, disclaimer, license scope, and contribution process.
-- Published a fixed-layout PDF rendered from `print.html`, matching the house print style used by the other Awake legal templates: front matter on the first page, then the operative memorandum. No Word release was published for this version.
+- Published a fixed-layout PDF rendered from `print.html`, matching the house print style used by the other Awake legal templates: front matter on the first page, then the operative memorandum.
+- Published a fill-in edition in Word and PDF: the memorandum with the version block, licence, field legend, and counsel prompts removed, and every blank highlighted for completion. Both formats are generated from one source by `build-fill-in.py`, satisfying the release requirement that formats be reconciled.
+- Moved the drafting notes out of the document and onto the online reading page, so a signing copy carries no instructions.
+- Added the online reading page and listed the resource in the legal catalog.
 - Recorded the document's true length. The operative memorandum runs to two pages at readable type, and remains two pages when completed; a genuine single page would require type below eight points or the removal of roughly a quarter of the substance. Earlier drafting text that asserted a one-page fit was corrected.
 - No independent legal review is represented by this release. Operative provisions, and the binding posture in particular, remain subject to counsel and tax review.
