@@ -4,11 +4,11 @@ This guide is educational and non-operative. It is not part of the memorandum an
 
 ## What this template is—and is not
 
-It is a one-page record of what a group of venture partners have agreed in principle, written down before definitive agreements exist. Its purpose is to make disagreement visible early, while it is still cheap, and to give counsel a clear brief to draft from.
+It is a short-form record of what a group of venture partners have agreed in principle, written down before definitive agreements exist. Its purpose is to make disagreement visible early, while it is still cheap, and to give counsel a clear brief to draft from.
 
 It is not a founders' agreement, an operating agreement, an investor term sheet, or a contract to form a venture. Clauses 1 through 8 are intent. Only Clause 9 is written to bind.
 
-Keep it to one page. Length is the point: a document people will actually read, argue about, and sign in a week is worth more at this stage than a thorough one that sits unsigned for a quarter.
+Keep it short. Length is the point: a document people will actually read, argue about, and sign in a week is worth more at this stage than a thorough one that sits unsigned for a quarter.
 
 ## Field legend
 
@@ -36,7 +36,7 @@ The canonical memorandum retains visible bracketed fields because it is a templa
 - Complete every row of the exit table. This is the section most often left vague and most often regretted.
 - Fix the confidentiality period, the exclusivity scope and carve-outs, the governing law, and the dispute path.
 - Have counsel confirm the binding posture in Clause 9 before signature.
-- Remove all instructions and unresolved fields; confirm the result still fits on one page.
+- Remove all instructions and unresolved fields; confirm the result has not grown beyond two pages.
 
 ## Concepts partners should understand
 

@@ -1,6 +1,6 @@
 # Awake Venture Memorandum of Understanding
 
-**Version 1.0 — one-page statement of intent among venture partners forming a new venture**<br>
+**Version 1.0 — short-form statement of intent among venture partners forming a new venture**<br>
 Published: 2026-08-22<br>
 Last legal review: Not recorded; independent counsel review required
 
@@ -12,7 +12,7 @@ The template text is copyright © 2026 Amit Rathore and licensed under the [Crea
 
 ## What this document is
 
-This is a **one-page memorandum of understanding** for people who have decided to build a venture together and want their intentions written down before definitive agreements exist. It records the venture structure, equity, other compensation, roles and responsibilities, and — unusually for an instrument of this kind — an explicit, dated exit intent.
+This is a **short-form memorandum of understanding** for people who have decided to build a venture together and want their intentions written down before definitive agreements exist. It records the venture structure, equity, other compensation, roles and responsibilities, and — unusually for an instrument of this kind — an explicit, dated exit intent.
 
 It is **mostly non-binding by design.** Clauses 1 through 8 are a statement of intent. Only the clauses expressly identified in Clause 9 are intended to be legally binding. It is not a founders' agreement, an operating agreement, a term sheet for investors, or a substitute for the formation, equity-issuance, intellectual-property, employment, securities, and tax package the venture will require.
 
@@ -24,7 +24,7 @@ Visible bracketed fields are intentional template fields and must be resolved be
 - `[COUNSEL: …]` requires individualized legal or tax review.
 - `[DRAFTING NOTE: …]` must be removed from a signing copy.
 
-Use the separate [drafting and completion guide](./guide.md). A final signing copy must not contain unresolved brackets, examples, or drafting instructions, and should fit on a single page.
+Use the separate [drafting and completion guide](./guide.md). A final signing copy must not contain unresolved brackets, examples, or drafting instructions, and should be kept as short as the venture allows. As published, the operative memorandum runs to two pages at readable type; see [`README.md`](./README.md) for what a genuine one-page version would cost.
 
 ---
 

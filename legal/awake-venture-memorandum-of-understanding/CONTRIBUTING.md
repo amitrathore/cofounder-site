@@ -15,9 +15,9 @@ Open a GitHub issue or pull request against this repository. Describe:
 
 Do not include client confidences, personal information, signatures, privileged material, or venture secrets.
 
-## Keep it to one page
+## Keep it short
 
-This template's usefulness depends on its length. A completed memorandum should fit on a single page. Proposals that add clauses should say what they would remove, or explain why the addition earns the space. Material that belongs in a founders' agreement, operating agreement, or investor term sheet should be proposed there instead.
+This template's usefulness depends on its length. The current release runs to two pages of operative text, and it should not grow. Proposals that add clauses should say what they would remove, or explain why the addition earns the space. Material that belongs in a founders' agreement, operating agreement, or investor term sheet should be proposed there instead.
 
 ## Review and release
 
@@ -34,7 +34,7 @@ Before a release:
 - reconcile Markdown and any HTML, Word, or PDF text;
 - search for unresolved drafting notes and placeholders;
 - confirm the version and dates in every format;
-- confirm a completed copy still fits on one page;
+- confirm the operative memorandum has not grown beyond two pages;
 - record substantive changes in `CHANGELOG.md`;
 - record the legal-review status accurately; and
 - verify all links and rendered documents.

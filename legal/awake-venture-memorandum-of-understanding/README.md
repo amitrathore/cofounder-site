@@ -1,8 +1,8 @@
 # Awake Venture Memorandum of Understanding
 
-This directory is the publication home for the **Awake Venture Memorandum of Understanding**, a one-page open template for people who have decided to build a venture together and want their intentions recorded before definitive agreements exist.
+This directory is the publication home for the **Awake Venture Memorandum of Understanding**, a short-form open template for people who have decided to build a venture together and want their intentions recorded before definitive agreements exist.
 
-It covers the venture structure, founding equity, compensation beyond equity, roles and responsibilities, intellectual property, and an explicit, dated exit intent. It is deliberately short: the document is meant to fit on a single page once completed.
+It covers the venture structure, founding equity, compensation beyond equity, roles and responsibilities, intellectual property, and an explicit, dated exit intent. It is deliberately short, and brevity is the drafting discipline it asks for; see **Length** below for what the current release actually runs to.
 
 It is **not** a founders' agreement, an operating agreement, an investor term sheet, or a substitute for the formation, equity-issuance, intellectual-property, employment, securities, and tax package a venture requires.
 
@@ -20,13 +20,19 @@ It is **not** a founders' agreement, an operating agreement, an investor term sh
 ## Files
 
 - [`awake-venture-memorandum-of-understanding.md`](./awake-venture-memorandum-of-understanding.md) — canonical editable source
+- [`awake-venture-memorandum-of-understanding.pdf`](./awake-venture-memorandum-of-understanding.pdf) — fixed-layout PDF version 1.0
+- [`print.html`](./print.html) — print stylesheet the PDF is rendered from
 - [`guide.md`](./guide.md) — drafting and completion guide
 - [`DISCLAIMER.md`](./DISCLAIMER.md) — legal and professional-services disclaimer
 - [`LICENSE.md`](./LICENSE.md) — license scope and attribution instructions
 - [`CHANGELOG.md`](./CHANGELOG.md) — release history
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) — correction and contribution process
 
-Fixed-layout and Word releases have not been published for version 1.0.
+A Word release has not been published for version 1.0.
+
+## Length
+
+The operative memorandum runs to two pages of the published PDF at readable type: page one carries the venture, structure, equity, compensation, roles, and intellectual property; page two carries exit intent, definitive agreements, the binding terms, and signatures. A completed copy — with bracketed fields replaced by real values — remains two pages. Fitting the document onto a single page requires either type below eight points or removing roughly a quarter of its substance. Treat "one-page" as the drafting discipline the template aims at rather than a claim about the current release.
 
 ## Source of truth
 
