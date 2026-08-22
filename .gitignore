@@ -19,3 +19,7 @@ node_modules/
 # Build output (if added later)
 dist/
 .cache/
+
+# Python (legal document generators)
+__pycache__/
+*.py[cod]
