@@ -1,0 +1,53 @@
+/* Shared Docs resources and progressive disclosure navigation. */
+.docs-nav { position: relative; font-family: inherit; }
+.docs-nav summary { cursor: pointer; list-style: none; font: inherit; color: inherit; padding: 6px 0; }
+.docs-nav summary::-webkit-details-marker { display: none; }
+.docs-nav summary:focus-visible, .docs-dropdown a:focus-visible, .docs-checklist summary:focus-visible { outline: 2px solid #B83A2E; outline-offset: 5px; }
+.docs-nav[open] > summary, .docs-dropdown a[aria-current] { color: #B83A2E; }
+.docs-dropdown { position: absolute; right: 0; top: 100%; z-index: 100; width: min(300px, calc(100vw - 40px)); padding: 10px; background: #FAF7F2; color: #161411; border: 1px solid #d9d2c8; box-shadow: 0 18px 45px #1614111a; }
+.book-nav .docs-dropdown a { display: block; padding: 12px; border-bottom: 1px solid #ded8cf; white-space: normal; text-transform: none; letter-spacing: normal; }
+.book-nav .docs-dropdown a:last-child { border-bottom: 0; }
+.docs-dropdown strong { display: block; font: 600 14px/1.5 Inter, sans-serif; }
+.docs-dropdown span { display: block; margin-top: 3px; font: 400 12px/1.5 Inter, sans-serif; color: #686259; }
+.docs-hero { max-width: 900px; margin-bottom: 42px; }
+.docs-hero h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(38px, 5.5vw, 66px); line-height: 1.09; letter-spacing: -0.035em; font-weight: 400; margin: 18px 0 24px; }
+.docs-hero > p { max-width: 750px; font-size: 18px; line-height: 1.7; color: #686259; }
+.docs-meta { font-size: 12px !important; line-height: 1.7 !important; margin-top: 22px; }
+.docs-back { display: inline-block; margin-bottom: 26px; font-size: 13px; }
+.docs-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.docs-card { border: 1px solid #d9d2c8; padding: clamp(22px,3vw,34px); background: #fffdf8; }
+.docs-card h2 { font: 400 30px/1.2 Fraunces,Georgia,serif; margin: 14px 0; }
+.docs-card h3 { font-size: 18px; margin: 0 0 12px; }
+.docs-card p { line-height: 1.7; color: #686259; }
+.docs-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; align-items: center; }
+.docs-actions .program-button { text-align: center; }
+.docs-section { margin-top: 54px; }
+.docs-section > h2 { font: 400 34px/1.25 Fraunces,Georgia,serif; margin-bottom: 22px; }
+.docs-section p, .docs-section li { line-height: 1.75; }
+.docs-section li { margin-bottom: 10px; }
+.docs-section ul, .docs-section ol { padding-left: 24px; }
+.docs-note { padding: 24px; border-left: 3px solid #B83A2E; background: #b83a2e08; line-height: 1.7; margin: 32px 0; }
+.docs-checklist { border: 1px solid #d9d2c8; margin: 12px 0; background: #fffdf8; scroll-margin-top: 100px; }
+.docs-checklist > summary { cursor: pointer; padding: 20px 24px; font-weight: 600; line-height: 1.5; }
+.docs-checklist[open] > summary { border-bottom: 1px solid #d9d2c8; color: #B83A2E; }
+.docs-detail { padding: 12px 24px 24px; overflow-wrap: anywhere; line-height: 1.75; }
+.docs-detail h2 { font: 400 28px/1.3 Fraunces,Georgia,serif; margin: 32px 0 16px; }
+.docs-detail h3 { font-size: 19px; margin: 25px 0 12px; }
+.docs-detail p { margin: 16px 0; }
+.docs-detail ul, .docs-detail ol { padding-left: 25px; }
+.docs-detail blockquote { margin: 20px 0; border-left: 2px solid #B83A2E; padding-left: 16px; }
+.docs-table { overflow-x: auto; margin: 20px 0; }
+.docs-table table { border-collapse: collapse; min-width: 620px; width: 100%; font-size: 13px; }
+.docs-table th, .docs-table td { text-align: left; vertical-align: top; border-bottom: 1px solid #ded8cf; padding: 12px; }
+.docs-table th { background: #f0ece5; }
+.docs-agreement .docs-detail { max-width: 860px; margin: auto; }
+.legal-catalog > .docs-card { margin-bottom: 36px; }
+@media (max-width: 640px) {
+ .docs-grid { grid-template-columns: 1fr; }
+ .docs-page { padding: 42px 20px 70px; }
+ .docs-actions { align-items: stretch; }
+ .docs-actions .program-button { max-width: 100%; white-space: normal; }
+ .docs-detail { padding: 8px 16px 20px; }
+ .docs-checklist > summary { padding: 17px 16px; }
+ .docs-nav .docs-dropdown { right: -12px; width: min(270px,calc(100vw - 40px)); }
+}

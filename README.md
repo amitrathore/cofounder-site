@@ -24,6 +24,7 @@ Static site. No build step, no framework, no tracking. Open it in a browser.
 - `index.html` — homepage
 - `read/` — public manuscript pages
 - `ventures/` — example venture showcase
+- `docs/` — Docs hub, financing data room guide, editable starter sources and downloadable ZIP
 - `legal/` — versioned Awake Cofounder Agreement source, Word/PDF releases, license, disclaimer, guide, and contribution docs
 - `assets/book.css` — shared styles for manuscript and venture pages
 
@@ -34,6 +35,12 @@ Static site. No build step, no framework, no tracking. Open it in a browser.
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
+
+### Rebuild Docs resources
+
+Run `python3 scripts/build-docs.py` after editing the starter Markdown or page generator, then `python3 scripts/check-docs.py`. The generator rebuilds the public pages, shared Docs navigation and deterministic starter ZIP, including empty closing folders.
+
+The Cofounder Agreement v2 public review draft lives in `legal/awake-cofounder-agreement/v2/`. Its `build.py` generates Word files; render those to PDF using the document rendering workflow, visually inspect every page, then run `validate.py` to reconcile the source, Word and PDF versions. Version 1 remains available.
 
 ### Deploy
 
@@ -52,3 +59,5 @@ The site is plain HTML/CSS and can be hosted anywhere — GitHub Pages, Cloudfla
 ## License
 
 Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved, except the template text in the [Awake Cofounder Agreement](./legal/awake-cofounder-agreement/LICENSE.md) and [Awake Open Collaboration Agreement](./legal/awake-open-collaboration-agreement/LICENSE.md), which is licensed under CC BY 4.0.
+
+The [Data Room starter](./docs/data-room/starter/LICENSE.md) and [Cofounder Agreement v2 public review draft](./legal/awake-cofounder-agreement/v2/LICENSE.md) are also available under CC BY 4.0.
