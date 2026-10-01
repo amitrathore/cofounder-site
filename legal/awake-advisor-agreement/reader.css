@@ -1,0 +1,10 @@
+.advisor-reader { overflow-wrap: anywhere; }
+.advisor-contents { margin: 30px 0; padding: 22px; border: 1px solid var(--rule); }
+.advisor-contents summary { cursor: pointer; font-weight: 600; }
+.advisor-contents ul { padding-left: 22px; line-height: 1.8; }
+.advisor-text { margin: 32px 0 64px; padding: 32px; border: 1px solid var(--rule); }
+.advisor-text h2 { font-family: var(--serif); font-size: 27px; line-height: 1.25; margin: 36px 0 16px; scroll-margin-top: 100px; }
+.advisor-text p { font-family: var(--serif); font-size: 18px; line-height: 1.7; margin: 0 0 16px; }
+.advisor-text mark { background: #f6ebc8; color: inherit; }
+@media (max-width: 600px) { .advisor-text { padding: 20px; } }
+@media print { .advisor-contents, .advisor-reader > .legal-section, .legal-contribution { display: none; } .advisor-text { border: 0; margin: 0; padding: 0; } .advisor-text h2 { break-after: avoid; } .advisor-text p { font-size: 11pt; line-height: 1.4; orphans: 3; widows: 3; } }

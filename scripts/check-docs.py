@@ -14,7 +14,7 @@ class Page(HTMLParser):
   if tag=='h1':self.h1+=1
   for key in ['href','src']:
    if key in a:self.links.append(a[key])
-new=[ROOT/'docs/index.html',ROOT/'docs/data-room/index.html',ROOT/'legal/awake-cofounder-agreement/v2/index.html']
+new=[ROOT/'docs/index.html',ROOT/'docs/data-room/index.html',ROOT/'legal/awake-cofounder-agreement/v2/index.html',ROOT/'legal/awake-advisor-agreement/index.html']
 for p in new:
  s=p.read_text();page=Page(s);assert page.h1==1,(p,'h1 count',page.h1)
  assert len(page.ids)==len(set(page.ids)),p

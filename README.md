@@ -25,7 +25,7 @@ Static site. No build step, no framework, no tracking. Open it in a browser.
 - `read/` — public manuscript pages
 - `ventures/` — example venture showcase
 - `docs/` — Docs hub, financing data room guide, editable starter sources and downloadable ZIP
-- `legal/` — versioned Awake Cofounder Agreement source, Word/PDF releases, license, disclaimer, guide, and contribution docs
+- `legal/` — versioned Awake agreements with canonical source, Word/PDF releases, license, disclaimer, guide, and contribution docs
 - `assets/book.css` — shared styles for manuscript and venture pages
 
 ### Local preview
@@ -60,4 +60,4 @@ The site is plain HTML/CSS and can be hosted anywhere — GitHub Pages, Cloudfla
 
 Code: [MIT](./LICENSE). Copy and content: © 2026 Amit Rathore, all rights reserved, except the template text in the [Awake Cofounder Agreement](./legal/awake-cofounder-agreement/LICENSE.md) and [Awake Open Collaboration Agreement](./legal/awake-open-collaboration-agreement/LICENSE.md), which is licensed under CC BY 4.0.
 
-The [Data Room starter](./docs/data-room/starter/LICENSE.md) and [Cofounder Agreement v2 public review draft](./legal/awake-cofounder-agreement/v2/LICENSE.md) are also available under CC BY 4.0.
+The [Data Room starter](./docs/data-room/starter/LICENSE.md), [Cofounder Agreement v2 public review draft](./legal/awake-cofounder-agreement/v2/LICENSE.md), and [Awake Advisor Agreement](./legal/awake-advisor-agreement/LICENSE.md) are also available under CC BY 4.0.
