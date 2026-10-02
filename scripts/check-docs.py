@@ -30,6 +30,9 @@ for p in ROOT.rglob('*.html'):
  s=p.read_text()
  if 'book-nav' in s:
   assert not re.search(r'<a\b[^>]*>Legal</a>',s),p
+legal_page=(ROOT/'legal/index.html').read_text()
+meta_description=re.search(r'<meta name="description" content="([^"]*)">',legal_page)
+assert meta_description and '<' not in meta_description.group(1) and 'Advisor Agreement' in legal_page
 starter=ROOT/'docs/data-room/starter';zpath=ROOT/'docs/data-room/newco-data-room-v1.0.zip'
 with zipfile.ZipFile(zpath) as z:
  assert z.testzip() is None

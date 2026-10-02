@@ -140,7 +140,7 @@ for path in ROOT.rglob('*.html'):
  if rel=='index.html':s=s.replace('<li><a href="./legal/">Legal</a></li>','<li><a href="/docs/">Docs</a></li><li><a href="/docs/data-room/">Data Room</a></li>')
  if rel=='legal/index.html':
   s=s.replace('Legal · Cofounder','Agreements · Cofounder Docs')
-  s=s.replace('Open legal infrastructure for founders','Open agreements · <a href="/docs/">All Docs</a>')
+  s=s.replace('<div class="program-eyebrow">Open legal infrastructure for founders</div>','<div class="program-eyebrow">Open agreements · <a href="/docs/">All Docs</a></div>')
   feature=card('Public review draft · September 19, 2026','Cofounder Agreement v2','Expanded service terms, milestone choices, IP records and coordinated equity implementation. Independent legal review has not been recorded. Version 1 remains available below.',[('/legal/awake-cofounder-agreement/v2/','Explore v2 and downloads'),('/docs/data-room/','Data Room guide')])
   if '<!-- v2-feature -->' not in s:s=s.replace('<section class="legal-path"','<!-- v2-feature -->'+feature+'<!-- /v2-feature -->\n<section class="legal-path"')
   else:s=re.sub(r'<!-- v2-feature -->.*?<!-- /v2-feature -->','<!-- v2-feature -->'+feature+'<!-- /v2-feature -->',s,flags=re.S)
